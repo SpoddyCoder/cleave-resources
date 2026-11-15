@@ -1,8 +1,8 @@
 # Demucs hybrid transformer weights
 
-Unmodified copies of the pretrained [Demucs](https://github.com/facebookresearch/demucs) v4 hybrid transformer weights from Meta. Cleave uses them to split a song into stems. Cleave uses `htdemucs` for a standard separate and `htdemucs_ft` (a bag of four fine-tuned models) for a High quality separate.
+Unmodified copies of the pretrained [Demucs](https://github.com/facebookresearch/demucs) v4 hybrid transformer weights from Meta. Cleave uses them to split a song into stems: `htdemucs` for a standard separate, and `htdemucs_ft` (a bag of four fine-tuned models) for a High quality separate. `htdemucs_6s` adds guitar and piano stems; it is mirrored ahead of Cleave supporting it.
 
-Release tag: `demucs-v1`. All five files are attached to that one release, under their upstream names.
+Release tag: `demucs-hybrid-transformer-v1`. It mirrors Meta's `demucs/hybrid_transformer/` folder: every file is attached to that one release under its upstream name. Each name is unique to its contents, so a model added later gets its files attached to the same release without changing any existing download URL.
 
 | Model | File | Size (bytes) | SHA-256 |
 | --- | --- | --- | --- |
@@ -11,6 +11,7 @@ Release tag: `demucs-v1`. All five files are attached to that one release, under
 | `htdemucs_ft` | `d12395a8-e57c48e6.th` | 84,141,271 | `e57c48e6b0e38af4f7118d7bd08c49f0a0c0edf7d09143bdd902ea0d237303e6` |
 | `htdemucs_ft` | `92cfc3b6-ef3bcb9c.th` | 84,141,271 | `ef3bcb9c8b40d14ae5d51b6db2587339cc12c6b77c0be151ce6d69002e087bf2` |
 | `htdemucs_ft` | `04573f0d-f3cf25b2.th` | 84,141,271 | `f3cf25b222c4eed7cd49dd8b2c9597d50c18bd154090f7b919cfa5f93cf22c49` |
+| `htdemucs_6s` | `5c90dfd2-34c22ccb.th` | 54,996,327 | `34c22ccb381c6f9fdbf324f04e1e2fe21aaaf293f5ded163a162697ff9a02ddd` |
 
 The second half of each file name is the start of its SHA-256. Torch hub checks it on download.
 
@@ -23,7 +24,7 @@ Demucs is released under the MIT license, with no separate terms for its pretrai
 Download, for example:
 
 ```
-https://github.com/SpoddyCoder/cleave-resources/releases/download/demucs-v1/955717e8-8726e21a.th
+https://github.com/SpoddyCoder/cleave-resources/releases/download/demucs-hybrid-transformer-v1/955717e8-8726e21a.th
 ```
 
 If you use Demucs in research, cite the authors' papers: Simon Rouard, Francisco Massa, and Alexandre Défossez, "Hybrid Transformers for Music Source Separation", ICASSP 2023; and Alexandre Défossez, "Hybrid Spectrogram and Waveform Source Separation", Proceedings of the ISMIR 2021 Workshop on Music Source Separation. BibTeX is in the [upstream README](https://github.com/facebookresearch/demucs#how-to-cite).

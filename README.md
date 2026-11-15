@@ -11,7 +11,7 @@ The files are not part of this git tree. Each one is attached to a GitHub Releas
 | Resource | Release tag | File | Upstream | License |
 | --- | --- | --- | --- | --- |
 | Beat This `final0` checkpoint | `beat-this-final0-v1` | `beat_this-final0.ckpt` | [CPJKU/beat_this](https://github.com/CPJKU/beat_this) | MIT, see [beat-this/LICENSE](beat-this/LICENSE) |
-| Demucs `htdemucs` and `htdemucs_ft` weights | `demucs-v1` | five `.th` files, see [demucs/README.md](demucs/README.md) | [facebookresearch/demucs](https://github.com/facebookresearch/demucs) | MIT, see [demucs/LICENSE](demucs/LICENSE) |
+| Demucs `htdemucs`, `htdemucs_ft`, and `htdemucs_6s` weights | `demucs-hybrid-transformer-v1` | six `.th` files, see [demucs/README.md](demucs/README.md) | [facebookresearch/demucs](https://github.com/facebookresearch/demucs) | MIT, see [demucs/LICENSE](demucs/LICENSE) |
 
 Details and hashes for each resource are in its folder.
 
@@ -27,4 +27,6 @@ Only resources whose license allows redistribution are mirrored here.
 2. Create a release tagged `<resource>-v<n>`, attach the file unmodified, and put the license notice and SHA-256 in the release notes. Do not mark it as the latest release.
 3. Add a row to the table above.
 
-Never replace a published file. Cleave pins each file's hash, so a changed file needs a new tag (`-v2`), and the old release stays up for older Cleave builds.
+Never replace or delete a published file. Cleave pins each file's hash, so a changed file needs a new tag (`-v2`), and the old release stays up for older Cleave builds.
+
+Adding a new file to an existing release is fine when the file name is unique to its contents, as Demucs names are: existing download URLs do not change. Add its size and SHA-256 to the resource's README and to the release notes.
