@@ -1,0 +1,4 @@
+# Mirrored files are release assets, not part of the git tree.
+*.ckpt
+*.th
+*.zip
