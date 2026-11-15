@@ -11,6 +11,7 @@ The files are not part of this git tree. Each one is attached to a GitHub Releas
 | Resource | Release tag | File | Upstream | License |
 | --- | --- | --- | --- | --- |
 | Beat This `final0` checkpoint | `beat-this-final0-v1` | `beat_this-final0.ckpt` | [CPJKU/beat_this](https://github.com/CPJKU/beat_this) | MIT, see [beat-this/LICENSE](beat-this/LICENSE) |
+| Demucs `htdemucs` and `htdemucs_ft` weights | `demucs-v1` | five `.th` files, see [demucs/README.md](demucs/README.md) | [facebookresearch/demucs](https://github.com/facebookresearch/demucs) | MIT, see [demucs/LICENSE](demucs/LICENSE) |
 
 Details and hashes for each resource are in its folder.
 
